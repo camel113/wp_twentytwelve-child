@@ -1,0 +1,120 @@
+/*
+Theme Name:     Twenty Twelve PME-Website.ch
+Theme URI:      http://example.com/
+Description:    Child theme for the Twenty twelve theme
+Author:         Your name here
+Author URI:     http://example.com/about/
+Template:       twentytwelve
+Version:        0.1.0
+*/
+@import url("../twentytwelve/style.css");
+
+.site-content article {
+	border-bottom: none;
+	margin-bottom: 72px;
+	margin-bottom: 5.142857143rem;
+	padding-bottom: 24px;
+	padding-bottom: 1.714285714rem;
+	word-wrap: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+}	
+.abg-2columns-2{
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 1070px) {
+
+	.abg-2columns-1{
+	  width: 650px;
+	  float: left;
+	}
+	.abg-2columns-2{
+	  margin-left: 670px;
+	  margin-bottom: 0;
+	}
+	.abg-clearfloat{
+	  clear: left;
+	}
+	  
+}
+.abg-r-footerinfo{
+	float: right;
+}
+ /* Flexible iFrame */
+
+.Flexible-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.Flexible-container iframe,   
+.Flexible-container object,  
+.Flexible-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.abg-article{
+	max-width: 500px;
+	width: 100%;
+	display: inline-block;
+	border-bottom: 1px solid #ededed;
+	padding-bottom: 8px;
+	margin-bottom: 8px;
+}
+.abg-article .abg-article-image{
+	display: inline-block;
+	float: left;
+}
+.abg-article .abg-article-image .abg-article-thumbs{
+	width: 95px;
+	height: 71px;
+	border: 1px solid #ccc;
+  	border: 1px solid rgba(0, 0, 0, 0.2);
+  	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.abg-article .abg-article-info{
+	display: inline-block;
+	max-width: 400px;
+	width: 100%;
+}
+.abg-article .abg-article-info-texte{
+	display: inline-block;
+	margin-left: 5px;
+	max-width: 320px;
+	width: 100%;
+}
+.abg-article .abg-article-info .abg-article-titre{
+
+}
+.abg-article .abg-article-info .abg-description{
+	font-size: 0.9em;
+	margin-top: 5px;
+}
+.abg-article .abg-article-prix-n{
+	float: right;
+	display: block;
+	width: 70px;
+}
+@media only screen and (max-width: 550px) {
+	.abg-article .abg-article-prix-n{
+		float: none;
+		margin-left: 5px;
+	}
+	.abg-article .abg-article-info{
+		width: auto;
+		max-width: 240px;
+	}
+	.abg-article .abg-article-info-texte{
+		max-width: 240px;
+		width: auto;
+	}
+}
