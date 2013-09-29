@@ -14,7 +14,9 @@
  * @since Twenty Twelve 1.0
  */
 
-get_header(); ?>
+get_header(); 
+$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+?>
 
   <div id="primary" class="site-content">
     <div id="content" role="main">
@@ -22,7 +24,7 @@ get_header(); ?>
         <?php get_template_part( 'content', 'page' ); ?>
       <?php endwhile; // end of the loop. ?>
 
-      <?php query_posts('posts_per_page=-1&post_type=article'); ?>
+      <?php query_posts('posts_per_page=1&post_type=article&paged='.$paged); ?>
       <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
           <div class="abg-article">
@@ -42,6 +44,7 @@ get_header(); ?>
             </div>  
           </div>
         <?php endwhile; ?>
+        <div id="abg-pagination"><?php my_pagination(); ?></div>
       <?php endif; ?>
 
     </div><!-- #content -->

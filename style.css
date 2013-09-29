@@ -1,5 +1,5 @@
 /*
-Theme Name:     Twenty Twelve PME-Website.ch
+Theme Name:     Twenty Twelve PME-Website.ch CHILD
 Theme URI:      http://example.com/
 Description:    Child theme for the Twenty twelve theme
 Author:         Your name here
@@ -44,6 +44,7 @@ Version:        0.1.0
  /* Flexible iFrame */
 
 .Flexible-container {
+	margin-bottom: 20px;
     position: relative;
     padding-bottom: 56.25%;
     padding-top: 30px;

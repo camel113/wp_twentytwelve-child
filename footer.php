@@ -14,7 +14,7 @@
 	<footer id="colophon" role="contentinfo">
 		<div class="site-info">
 			<span>&copy; <?php bloginfo( 'name' ); ?></span>
-			<span class="abg-r-footerinfo"><a href="http://www.pme-website.ch" title="Conception site internet simple pour PME">PME-Website.ch</span>
+			<span class="abg-r-footerinfo"><a href="http://www.pme-web.ch" title="Conception site internet simple pour PME et particuliers">pme-web.ch</span>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
