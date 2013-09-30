@@ -16,8 +16,4 @@ if ( ! function_exists( 'my_pagination' ) ) :
 		) );
 	}
 endif;
-add_action( 'wp_enqueue_scripts', 'my_deregister_javascript', 100 );
-function my_deregister_javascript() {
-	wp_dequeue_script('fancybox');
-}
 ?>
