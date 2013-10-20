@@ -107,6 +107,9 @@ Version:        0.1.0
 img.header-image{
 	box-shadow: none;
 }
+.entry-title{
+	color: #39769d;
+}
 @media only screen and (max-width: 550px) {
 	.abg-article .abg-article-prix-n{
 		float: none;
