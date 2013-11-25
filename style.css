@@ -115,6 +115,22 @@ img.header-image{
 	margin-bottom: 0;
 	color: #39769d;
 }
+@media only screen and (max-width: 1000px) {
+	#abg-responsive-resize a{
+		display: none;
+	}
+}
+#abg-responsive-resize a{
+	background: url(images/ajuster.png) repeat scroll 0 0 transparent;
+    bottom: 0;
+    height: 80px;
+    position: fixed;
+    right: 0;
+    width: 80px;
+}
+#abg-responsive-resize a:hover{
+	background: url(images/responsive.png) repeat scroll 0 0 transparent;
+}
 @media only screen and (max-width: 550px) {
 	.abg-article .abg-article-prix-n{
 		float: none;
