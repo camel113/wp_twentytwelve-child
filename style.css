@@ -8,7 +8,9 @@ Template:       twentytwelve
 Version:        0.1.0
 */
 @import url("../twentytwelve/style.css");
-
+#primary{
+	width: 100%;
+}
 .site-content article {
 	border-bottom: none;
 	margin-bottom: 72px;
@@ -133,7 +135,7 @@ img.header-image{
 #abg-responsive-resize a:hover{
 	background: url(images/responsive.png) repeat scroll 0 0 transparent;
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 650px) {
 	.abg-article .abg-article-prix-n{
 		float: none;
 		margin-left: 5px;
@@ -145,5 +147,14 @@ img.header-image{
 	.abg-article .abg-article-info-texte{
 		max-width: 240px;
 		width: auto;
+	}
+}
+/* page-margin + img + margin + info-texte */
+@media only screen and (max-width: 390px) {
+	.abg-article .abg-article-prix-n{
+		margin-left: 0px;
+	}
+	.abg-article .abg-article-info-texte{
+		margin-left: 0px;
 	}
 }
