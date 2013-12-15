@@ -35,7 +35,7 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
               <div class="abg-article-info-texte">
                 <h3 class="abg-article-titre"><?php the_title(); ?></h3>
                 <p class="abg-description">
-                  <?php print_custom_field('description'); echo the_ID()?>
+                  <?php print_custom_field('description');?>
                 </p>
               </div>
               <div class="abg-article-prix-n">
