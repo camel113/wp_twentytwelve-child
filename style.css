@@ -158,3 +158,6 @@ img.header-image{
 		margin-left: 0px;
 	}
 }
+.site-content #content article{
+	margin-bottom: 0;
+}

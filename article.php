@@ -24,7 +24,7 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
         <?php get_template_part( 'content', 'page' ); ?>
       <?php endwhile; // end of the loop. ?>
 
-      <?php query_posts('posts_per_page=1&post_type=article&paged='.$paged); ?>
+      <?php query_posts('posts_per_page=20&post_type=article&paged='.$paged); ?>
       <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
           <div class="abg-article">
@@ -39,7 +39,7 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                 </p>
               </div>
               <div class="abg-article-prix-n">
-                <span><?php print_custom_field('prix_normal'); ?></span>
+                <span><b><?php print_custom_field('prix_normal'); ?></b></span>
               </div>
             </div>  
           </div>
