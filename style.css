@@ -11,6 +11,9 @@ Version:        0.1.0
 #primary{
 	width: 100%;
 }
+.site{
+	background-color: #000;
+}
 .site-content article {
 	border-bottom: none;
 	margin-bottom: 72px;
