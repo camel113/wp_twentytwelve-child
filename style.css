@@ -11,8 +11,13 @@ Version:        0.1.0
 #primary{
 	width: 100%;
 }
-.site{
+body .site{
 	background-color: #000;
+	box-shadow: none;
+
+}
+footer[role="contentinfo"]{
+	border-top: none;
 }
 .site-content article {
 	border-bottom: none;
