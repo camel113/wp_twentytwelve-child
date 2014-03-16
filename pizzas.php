@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Article
+ * Template Name: Pizzas
  *
  * Description: Twenty Twelve loves the no-sidebar look as much as
  * you do. Use this page template to remove the sidebar from any page.
@@ -24,21 +24,17 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
         <?php get_template_part( 'content', 'page' ); ?>
       <?php endwhile; // end of the loop. ?>
 
-      <?php query_posts('posts_per_page=20&post_type=article&paged='.$paged); ?>
+      <?php query_posts('posts_per_page=4&orderby=date&order=ASC&post_type=pizzas&paged='.$paged); ?>
       <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
           <div class="abg-article">
-            <div class="abg-article-image">
-              <img class="abg-article-thumbs" src="<?php print_custom_field('image:to_image_src');?>" alt="?php the_title(); ?>">
-            </div>
             <div class="abg-article-info">
-              <div class="abg-article-info-texte">
-                <h3 class="abg-article-titre"><?php the_title(); ?></h3>
-                <p class="abg-description">
-                  <?php print_custom_field('description');?>
-                </p>
-              </div>
-              <div class="abg-article-prix-n">
+              <div class="abg-article-info-texte pizza">
+                <h3 class="abg-article-titre"><?php the_title();?></h3>
+                <p class="abg-description"><?php print_custom_field('description'); ?></p>
+              </div><div class="abg-article-prix-r">
+                <span><b><?php print_custom_field('prix_reduit'); ?></b></span>
+              </div><div class="abg-article-prix-n">
                 <span><b><?php print_custom_field('prix_normal'); ?></b></span>
               </div>
             </div>  
